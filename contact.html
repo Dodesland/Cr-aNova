@@ -1,13 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - CréaNova</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="font-sans text-gray-900">
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - CréaNova</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-2xl font-bold text-indigo-600">CréaNova</h1>
+        <nav class="space-x-6">
+          <a href="index.html" class="hover:text-indigo-600">Accueil</a>
+          <a href="about.html" class="hover:text-indigo-600">À propos</a>
+          <a href="contact.html" class="text-indigo-600 font-semibold"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
 
-</body>
+    <!-- Hero Section -->
+    <section class="bg-indigo-600 text-white text-center py-20">
+      <h2 class="text-4xl font-bold mb-4">Contactez-nous</h2>
+      <p class="max-w-2xl mx-auto text-lg">
+        Une idée, un projet ou une question ? Écrivez-nous, nous serons ravis
+        d’échanger avec vous.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12">
+      <!-- Formulaire -->
+      <div class="bg-white p-8 rounded-xl shadow-md">
+        <h3 class="text-2xl font-semibold text-indigo-600 mb-6">
+          Envoyez-nous un message
+        </h3>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700"
+              >Nom</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg shadow hover:bg-indigo-700 transition"
+          >
+            Envoyer
+          </button>
+        </form>
+      </div>
+
+      <!-- Infos -->
+      <div class="flex flex-col justify-center">
+        <h3 class="text-2xl font-semibold text-indigo-600 mb-6">
+          Nos coordonnées
+        </h3>
+        <p class="text-gray-700 mb-4">
+          📍 42 Rue de l’Innovation, 75000 Paris
+        </p>
+        <p class="text-gray-700 mb-4">📞 +33 1 23 45 67 89</p>
+        <p class="text-gray-700 mb-8">✉️ contact@creanova.fr</p>
+
+        <h4 class="text-lg font-semibold text-gray-800 mb-3">Suivez-nous :</h4>
+        <div class="flex space-x-4 text-indigo-600 mb-8">
+          <a href="#" class="hover:text-indigo-800">LinkedIn</a>
+          <a href="#" class="hover:text-indigo-800">Twitter</a>
+          <a href="#" class="hover:text-indigo-800">Instagram</a>
+        </div>
+
+        <!-- Google Map -->
+        <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.978665895696!2d2.352221615674836!3d48.85661407928737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06f94d31%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1692000000000!5m2!1sfr!2sfr"
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+      <p>© 2025 CréaNova - Tous droits réservés</p>
+    </footer>
+  </body>
 </html>
