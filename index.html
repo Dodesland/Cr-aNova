@@ -4,56 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CréaNova - Agence Créative</title>
+    <meta name="description" content="CréaNova est une agence créative spécialisée en design, développement web et stratégie digitale. Nous donnons vie à vos idées." />
+    <meta name="keywords" content="CréaNova, agence créative, design, développement web, stratégie digitale" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="font-sans text-gray-900">
+  <body class="font-sans text-gray-900 antialiased flex flex-col min-h-screen">
     <!-- Header -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md sticky top-0 z-50">
       <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
         <h1 class="text-2xl font-bold text-indigo-600">CréaNova</h1>
-        <nav class="space-x-6">
-          <a href="index.html" class="hover:text-indigo-600">Accueil</a>
-          <a href="about.html" class="hover:text-indigo-600">À propos</a>
-          <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+        <nav class="space-x-6" aria-label="Navigation principale">
+          <a href="index.html" class="text-indigo-600 font-semibold">Accueil</a>
+          <a href="about.html" class="hover:text-indigo-600 transition-colors">À propos</a>
+          <a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
         </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-indigo-600 text-white text-center py-20">
-      <h2 class="text-4xl font-bold mb-4">Nous donnons vie à vos idées</h2>
-      <p class="mb-6 max-w-xl mx-auto">
-        CréaNova est une agence créative spécialisée dans le design, le
-        développement web et la communication digitale.
-      </p>
-      <a
-        href="about.html"
-        class="bg-white text-indigo-600 px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
-        >En savoir plus</a
-      >
-    </section>
+    <!-- Main -->
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="bg-indigo-600 text-white text-center py-20">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Nous donnons vie à vos idées</h2>
+        <p class="mb-6 max-w-xl mx-auto text-lg leading-relaxed">
+          CréaNova est une agence créative spécialisée dans le design, le
+          développement web et la communication digitale.
+        </p>
+        <a
+          href="about.html"
+          class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 active:scale-95 transition transform"
+        >
+          En savoir plus
+        </a>
+      </section>
 
-    <!-- Services -->
-    <section
-      class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-3 gap-8 text-center"
-    >
-      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">Design UI/UX</h3>
-        <p>Nous créons des interfaces modernes et intuitives.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">Développement Web</h3>
-        <p>Des sites performants, responsives et optimisés.</p>
-      </div>
-      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">Stratégie digitale</h3>
-        <p>Accompagnement global pour booster votre présence en ligne.</p>
-      </div>
-    </section>
+      <!-- Services -->
+      <section class="max-w-6xl mx-auto py-16 px-6">
+        <h3 class="text-3xl font-bold text-center text-indigo-600 mb-12">
+          Nos services
+        </h3>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+            <h4 class="text-xl font-semibold mb-2 text-indigo-600">Design UI/UX</h4>
+            <p class="text-gray-700">Nous créons des interfaces modernes, esthétiques et intuitives.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+            <h4 class="text-xl font-semibold mb-2 text-indigo-600">Développement Web</h4>
+            <p class="text-gray-700">Des sites performants, responsives et optimisés pour tous les appareils.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+            <h4 class="text-xl font-semibold mb-2 text-indigo-600">Stratégie digitale</h4>
+            <p class="text-gray-700">Un accompagnement global pour booster votre visibilité en ligne.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-8 text-center">
-      <p>© 2025 CréaNova - Tous droits réservés</p>
+      <p class="text-sm">© 2025 CréaNova - Tous droits réservés</p>
     </footer>
   </body>
 </html>

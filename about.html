@@ -4,78 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À propos - CréaNova</title>
+    <meta name="description" content="Découvrez l'histoire, les valeurs et la vision de CréaNova, une agence créative dédiée à l'innovation et à la performance." />
+    <meta name="keywords" content="CréaNova, agence créative, design, innovation, digital" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="font-sans text-gray-900">
+  <body class="font-sans text-gray-900 antialiased">
     <!-- Header -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md sticky top-0 z-50">
       <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
         <h1 class="text-2xl font-bold text-indigo-600">CréaNova</h1>
-        <nav class="space-x-6">
-          <a href="index.html" class="hover:text-indigo-600">Accueil</a>
+        <nav class="space-x-6" aria-label="Navigation principale">
+          <a href="index.html" class="hover:text-indigo-600 transition-colors">Accueil</a>
           <a href="about.html" class="text-indigo-600 font-semibold">À propos</a>
-          <a href="contact.html" class="hover:text-indigo-600">Contact</a>
+          <a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
         </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="bg-indigo-600 text-white text-center py-20">
-      <h2 class="text-4xl font-bold mb-4">À propos de nous</h2>
-      <p class="max-w-2xl mx-auto text-lg">
-        Une équipe passionnée, dédiée à transformer vos idées en projets
-        créatifs et performants.
-      </p>
-    </section>
+    <main>
+      <!-- Hero Section -->
+      <section class="bg-indigo-600 text-white text-center py-20">
+        <h2 class="text-4xl font-extrabold mb-4">À propos de nous</h2>
+        <p class="max-w-2xl mx-auto text-lg leading-relaxed">
+          Une équipe passionnée, dédiée à transformer vos idées en projets
+          créatifs et performants.
+        </p>
+      </section>
 
-    <!-- Notre Histoire -->
-    <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h3 class="text-2xl font-bold text-indigo-600 mb-4">Notre histoire</h3>
-        <p class="text-gray-700 leading-relaxed mb-4">
-          Fondée en 2020, CréaNova est née de l'envie de combiner créativité et
-          technologie. Depuis nos débuts, nous avons accompagné des dizaines de
-          marques dans leur transition digitale, en mettant l'accent sur le
-          design, l'innovation et l'impact.
-        </p>
-        <p class="text-gray-700 leading-relaxed">
-          Aujourd'hui, nous continuons à évoluer pour offrir des solutions
-          adaptées aux besoins d'un monde en constante mutation.
-        </p>
-      </div>
-      <img
-        src="assets/css/image/Équipe Créa.png"
-        alt="Équipe créative"
-        class="rounded-xl shadow-md"
-      />
-    </section>
+      <!-- Notre Histoire -->
+      <section class="max-w-6xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold text-indigo-600 mb-4">Notre histoire</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Fondée en 2020, CréaNova est née de l'envie de combiner créativité et
+            technologie. Depuis nos débuts, nous avons accompagné des dizaines de
+            marques dans leur transition digitale, en mettant l'accent sur le
+            design, l'innovation et l'impact.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Aujourd'hui, nous continuons à évoluer pour offrir des solutions
+            adaptées aux besoins d'un monde en constante mutation.
+          </p>
+        </div>
+        <img
+          src="assets/css/image/Équipe Créa.png"
+          alt="Photo de l'équipe créative de CréaNova"
+          class="rounded-xl shadow-lg transform hover:scale-105 transition duration-300"
+        />
+      </section>
 
-    <!-- Nos valeurs -->
-    <section class="bg-gray-50 py-16 px-6">
-      <div class="max-w-6xl mx-auto text-center mb-12">
-        <h3 class="text-2xl font-bold text-indigo-600">Nos valeurs</h3>
-        <p class="text-gray-600">
-          Les piliers qui guident chacune de nos collaborations.
-        </p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Créativité</h4>
-          <p>Imaginer et innover pour donner vie à vos projets.</p>
+      <!-- Nos valeurs -->
+      <section class="bg-gray-50 py-16 px-6">
+        <div class="max-w-6xl mx-auto text-center mb-12">
+          <h3 class="text-3xl font-bold text-indigo-600">Nos valeurs</h3>
+          <p class="text-gray-600 mt-2">
+            Les piliers qui guident chacune de nos collaborations.
+          </p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Expertise</h4>
-          <p>Une équipe pluridisciplinaire aux compétences complémentaires.</p>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+            <h4 class="text-xl font-semibold mb-2 text-indigo-600">Créativité</h4>
+            <p class="text-gray-700">Imaginer et innover pour donner vie à vos projets.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+            <h4 class="text-xl font-semibold mb-2 text-indigo-600">Expertise</h4>
+            <p class="text-gray-700">Une équipe pluridisciplinaire aux compétences complémentaires.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:shadow-xl transform hover:-translate-y-2 transition duration-300">
+            <h4 class="text-xl font-semibold mb-2 text-indigo-600">Engagement</h4>
+            <p class="text-gray-700">Placer vos objectifs au cœur de nos priorités.</p>
+          </div>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Engagement</h4>
-          <p>Placer vos objectifs au cœur de nos priorités.</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-8 text-center">
-      <p>© 2025 CréaNova - Tous droits réservés</p>
+      <p class="text-sm">© 2025 CréaNova - Tous droits réservés</p>
     </footer>
   </body>
 </html>
